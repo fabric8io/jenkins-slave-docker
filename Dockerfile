@@ -25,4 +25,4 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 
 # Standard SSH port
 EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["start-jenkins-slave.sh"]
